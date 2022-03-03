@@ -54,6 +54,7 @@ def annotate_every_even_number(numbers):
         else:
             print(number)
             counter +=1
+        even_number = not even_number
 
 annotate_every_even_number([1, 4, 5, 7, 9, 11])
 
@@ -63,11 +64,10 @@ annotate_every_even_number([1, 4, 5, 7, 9, 11])
 # Írj egy concatenate_shorts függvényt, mely paraméterül kap szavak listáját
 # és csak a 3 karakternél rövidebb szavakat fűzze össze egy stringbe,
 # és ezt adja vissza
-def concatenate_shorts(list_of_words):
-    concetanated_str = ""
-    for word in list_of_words:
-        if len(word) < 3:
-            concetanated_str +=word
-    return concetanated_str
+def concatenate_shorts(words):
+    result = ""
+    for word in words:
+        result =result + word
+    return result
 
-print(concatenate_shorts(["asd", "ls", "cd", "dvd", "gugli"])
+print(concatenate_shorts(["manó, bogyó, esernyő"]))
