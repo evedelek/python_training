@@ -1,7 +1,7 @@
 # get_max függvény, amelynek paraméterül meg lehet adni kettő lebegőpontos számot,
 # adja vissza a nagyobbat.
 
-def get_max(a, b):
+def get_max(a: float, b: float) -> float:
     if a > b:
         return a
     else:
